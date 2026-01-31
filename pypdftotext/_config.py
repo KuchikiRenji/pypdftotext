@@ -20,8 +20,11 @@ class PyPdfToTextConfigOverrides(TypedDict, total=False):
     INHERIT_CONSTANTS: bool
     AZURE_DOCINTEL_ENDPOINT: str
     AZURE_DOCINTEL_SUBSCRIPTION_KEY: str
+    
     AZURE_DOCINTEL_AUTO_CLIENT: bool
+
     AZURE_DOCINTEL_TIMEOUT: int
+
     DISABLE_OCR: bool
     DISABLE_PROGRESS_BAR: bool
     PROGRESS_BAR_POSITION: int | None
