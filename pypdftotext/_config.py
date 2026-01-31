@@ -1,11 +1,12 @@
 """Manage settings for text extraction and OCR operations"""
 
 from __future__ import annotations
-
 import logging
 import os
 from dataclasses import dataclass, InitVar, field
 from typing import cast, Any, TypedDict
+
+
 
 
 logger = logging.getLogger(__name__)
@@ -16,7 +17,6 @@ class PyPdfToTextConfigOverrides(TypedDict, total=False):
     Enumerate settings available to override via the PyPdfToTextConfig
     `overrides` InitVar.
     """
-
     INHERIT_CONSTANTS: bool
     AZURE_DOCINTEL_ENDPOINT: str
     AZURE_DOCINTEL_SUBSCRIPTION_KEY: str
